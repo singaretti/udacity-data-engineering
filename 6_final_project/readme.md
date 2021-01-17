@@ -37,7 +37,7 @@ These two videos can explain how different was the treatment in the beginning of
 
 It was created a cluster with Spark, JupyterHub, and all steps of processing staging tables was configured in Jupyter Notebook, created in notebook menu under EMR cluster options
 
-![Creating Notebook in AWS EMR](emr_notebook.png)
+![Creating Notebook in AWS EMR](readme-files/emr_notebook.png)
 
 -- AWS Redshift:
 It was used default configs to create this cluster, and all kind of interaction with Redshift was did using postgresql client (psycopg2) in EMR cluster
