@@ -53,7 +53,8 @@ pip install --upgrade pip
 ```
 
 -- Relationship between tables:
-This project ingested data into tables using Apache Airflow and AWS Redshift, AWS Redshift for staging tables, and Airflow for 3 tables, a kind of "fact table and two dimension tables", these "dimension tables" contains data related to country like state id and names, city id and names and also, Coronavirus disease (COVID-19) cases count by city is also included in city table. Another table called time just keep all occurrence dates available in this analysis.
+
+Star Schema was used to give simplicity to this model, since there are two different sources of data, and columns and files (tables) are different, this model extract what exists in both data sources, and give opportunity to analyze both countries "in one query" using fact table, and then, if needed, a time table is available to find a point in time of what is needed. Also, cities table give opportunity to separate cases in Italy by region, because since it happened differente kind of public politics, it's possible to check how north and south of Italy is differente in cases of COVID-19
 
 ![Data Model](readme-files/data_model.png)
 
